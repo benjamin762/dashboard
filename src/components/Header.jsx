@@ -7,16 +7,23 @@ export default function Header() {
     console.log(loggedIn)
     const dispatch = useDispatch()
 
-    return <header className="flex justify-between flex-wrap pb-5">
-        <span className="text-2xl font-bold italic">Dashbord app 1.0</span>
+    return <header className="flex justify-between align-baseline flex-wrap pb-5">
+        <span>
+            <span className="text-2xl  font-[impact] italic">Dashboard app 2.0 </span> 
+
+            <span className="text-1xl font-[Segoe_Script] italic">Stenlund edition</span>
+        </span>
         <Navbar/>
+        <span className="w-3xs text-right">
         {
             loggedIn ?
-            <span>Användarnamn <button onClick={() => dispatch(logout())} >Logga ut</button></span>
+            <span>Användarnamn <button className="text-blue-600 underline cursor-pointer" onClick={() => dispatch(logout())} >Logga ut</button></span>
             :
-            <span><button onClick={() => dispatch(login())} >Logga in</button></span>
+            <span><button className="text-blue-600 underline cursor-pointer" onClick={() => dispatch(login())} >Logga in</button></span>
+
 
         }
+        </span>
 
     </header>
 }

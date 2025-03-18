@@ -1,5 +1,9 @@
 # Dashboard 2.0
 
+## Nya funktioner
+
+1. Logga in för att se dashboarden.
+
 ## Beskrivning
 Det här är en dashboard där användare kan se olika saker 2.0.
 
