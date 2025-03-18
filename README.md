@@ -3,6 +3,7 @@
 ## Nya funktioner
 
 1. Logga in för att se dashboarden.
+2. Fixat så att logga in/ut ser ut som en länk.
 
 ## Beskrivning
 Det här är en dashboard där användare kan se olika saker 2.0.
