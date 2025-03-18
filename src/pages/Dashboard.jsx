@@ -3,7 +3,7 @@
 export default function Dashboard() {
 
 
-    return <main className="grid grid-cols-1 md:grid-cols-12 grid-flow-row-dense grid-rows-">
+    return <main className="grid grid-cols-1 md:grid-cols-12 grid-flow-row-dense grid-rows- gap-2.5">
         <h1 className="md:col-span-full relative left-1/12">Dashboard</h1>
         <section className="p-2 col-start-1 md:col-span-5 bg-blue-100">
             <h2>Stapeldiagram</h2>
