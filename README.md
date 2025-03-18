@@ -1,7 +1,7 @@
-# Dashboard
+# Dashboard 2.0
 
 ## Beskrivning
-Det här är en dahboard där användare kan se olika saker.
+Det här är en dashboard där användare kan se olika saker 2.0.
 
 ## Installation
 
