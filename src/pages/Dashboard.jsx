@@ -1,3 +1,4 @@
+import Table from "../components/Table";
 
 
 export default function Dashboard() {
@@ -41,28 +42,7 @@ export default function Dashboard() {
         </section>
         <section className="p-2  md:col-span-7 bg-blue-200">
             <h2>Tabell</h2>
-            <table className="m-6 border-4 border-rose-200 text-2xl">
-                <thead className="bg-rose-200">
-                    <tr>
-                        <th>Namn</th>
-                        <th>Poäng</th>
-                    </tr>
-                </thead>
-                <tbody className="bg-gray-200">
-                    <tr>
-                        <td>Adam</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Eva</td>
-                        <td>102</td>
-                    </tr>
-                    <tr>
-                        <td>Inger</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
+            <Table />    
         </section>
         <section className="p-2  md:col-span-2 bg-blue-100">
             <h2>Mätare</h2>

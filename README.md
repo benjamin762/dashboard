@@ -4,6 +4,8 @@
 
 1. Logga in för att se dashboarden.
 2. Fixat så att logga in/ut ser ut som en länk.
+3. Stapeldiagram och tårtdiagram
+4. Tabell som går sortera efter kolumn. TODO
 
 ## Beskrivning
 Det här är en dashboard där användare kan se olika saker 2.0.
