@@ -46,11 +46,11 @@ export default function Dashboard() {
         </section>
         <section className="p-2  md:col-span-2 bg-blue-100">
             <h2>Mätare</h2>
-            <section>
+            <section className="border-2 shadow-md rounded-sm p-4 bg-amber-100 m-4 w-fit">
                 <h3>Tillbud</h3>
                 <span className="text-8xl text-green-500 font-mono">0</span>
-            </section>
-            <section>
+            </section >
+            <section className="border-2 shadow-md rounded-sm p-4 bg-amber-100 m-4 w-fit">
                 <h3>Olyckor</h3>
                 <span className="text-8xl text-green-500 font-mono">0</span>
             </section>
