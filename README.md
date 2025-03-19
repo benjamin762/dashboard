@@ -1,14 +1,17 @@
 # Dashboard 2.0
 
+<img src=docs/img/screenshot.png alt=skärmbild>
+
 ## Nya funktioner
 
 1. Logga in för att se dashboarden.
-2. Fixat så att logga in/ut ser ut som en länk.
+2. Tabell som går sortera efter kolumn.
 3. Stapeldiagram och tårtdiagram
-4. Tabell som går sortera efter kolumn.
 
 ## Beskrivning
-Det här är en dashboard där användare kan se olika saker 2.0.
+Det här är en dashboard där användare kan se olika saker. I exempeldashboarden visas flera olika typer av information: Stapeldiagram, tårtdiagram, tabell, mätare och visare.
+
+Inloggningen sparas i global state. Responsiv med tailscales media quieries.
 
 ## Installation
 
@@ -18,7 +21,11 @@ Det här är en dashboard där användare kan se olika saker 2.0.
 
 ## Instruktioner
 
-TODO
+Klicka på kolumnrubriker för att sortera om tabellen.
+
+Ändra storlek på fönstret för att se att layouten anpassas även till smala skärmar.
+
+Använd skärmläsaren för att se att informationen i diagrammen går att komma åt och förstå även som text.
 
 ## Teknikval
 
