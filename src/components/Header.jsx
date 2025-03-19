@@ -17,7 +17,7 @@ export default function Header() {
         <span className="w-3xs text-right">
         {
             loggedIn ?
-            <span>Användarnamn <button className="text-blue-600 underline cursor-pointer" onClick={() => dispatch(logout())} >Logga ut</button></span>
+            <span>Janne Andersson <button className="text-blue-600 underline cursor-pointer" onClick={() => dispatch(logout())} >Logga ut</button></span>
             :
             <span><button className="text-blue-600 underline cursor-pointer" onClick={() => dispatch(login())} >Logga in</button></span>
 
