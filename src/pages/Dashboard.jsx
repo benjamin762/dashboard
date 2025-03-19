@@ -41,14 +41,14 @@ export default function Dashboard() {
         </section>
         <section className="p-2  md:col-span-7 bg-blue-200">
             <h2>Tabell</h2>
-            <table>
-                <thead>
+            <table className="m-6 border-4 border-rose-200 text-2xl">
+                <thead className="bg-rose-200">
                     <tr>
                         <th>Namn</th>
                         <th>Poäng</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="bg-gray-200">
                     <tr>
                         <td>Adam</td>
                         <td>100</td>
