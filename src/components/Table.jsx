@@ -13,10 +13,6 @@ export default function Table() {
         .sort((a, b) => {
             if (sort == "name") {
                 return a.name.localeCompare(b.name)
-                // https://stackoverflow.com/a/8900824 Sort alphabetic.
-                // var textA = a.name.toUpperCase();
-                // var textB = b.name.toUpperCase();
-                // return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
             } else if (sort == "points") {
                 // Highest points first.
                 return b.points - a.points
