@@ -1,28 +1,38 @@
+import { useState } from "react"
 
 
 export default function Table() {
+    const data = [
+        {name: "Adam", points: 100},
+        {name: "Inger", points: 0},
+        {name: "Eva", points: 102},
+    ]
+    const [sort, setSort] = useState("name")
 
+    const sortedRows = data
+        .sort((a, b) => {
+            if (sort == "name") {
+                return a.name.localeCompare(b.name)
+                // https://stackoverflow.com/a/8900824 Sort alphabetic.
+                // var textA = a.name.toUpperCase();
+                // var textB = b.name.toUpperCase();
+                // return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            } else if (sort == "points") {
+                // Highest points first.
+                return b.points - a.points
+            }
+        })
+        .map((d, i) => <tr key={i}><td>{d.name}</td><td>{d.points}</td></tr>)
 
-    return <table className="m-6 border-4 border-rose-200 text-2xl">
+    return <table className="m-6 border-4 h-80 border-rose-200 text-2xl">
     <thead className="bg-rose-200">
         <tr>
-            <th>Namn</th>
-            <th>Poäng</th>
+            <th className="w-40"><button className="p-1 m-1 cursor-pointer hover:border-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("name")}>Namn { sort=="name"? "🔽":""}</button></th>
+            <th className="w-40"><button className="p-1 m-1 cursor-pointer hover:border-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("points")}>Poäng { sort=="points"? "🔽":""}</button></th>
         </tr>
     </thead>
     <tbody className="bg-gray-200">
-        <tr>
-            <td>Adam</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Eva</td>
-            <td>102</td>
-        </tr>
-        <tr>
-            <td>Inger</td>
-            <td>0</td>
-        </tr>
+        {sortedRows}
     </tbody>
 </table>
 }
