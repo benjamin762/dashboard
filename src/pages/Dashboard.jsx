@@ -7,11 +7,18 @@ export default function Dashboard() {
         <h1 className="md:col-span-full relative left-1/12">Dashboard</h1>
         <section className="p-2 col-start-1 md:col-span-5 bg-blue-100">
             <h2>Stapeldiagram</h2>
+            <div className="flex items-end justify-between w-10/12 mx-auto h-60">
+                <div className="h-1/4 w-8 bg-black"></div>
+                <div className="h-4/4 w-8 bg-black"></div>
+                <div className="h-2/4 w-8 bg-black"></div>
+                <div className="h-3/4 w-8 bg-black"></div>
+                <div className="h-1/4 w-8 bg-black"></div>
+            </div>
             <img/>
         </section>
         <section className="p-2  md:col-span-4 bg-blue-200">
             <h2>Tårtdiagram</h2>
-            <img/>
+            <img width="100" height="100" className="bg-yellow-600 rounded-full m-auto h-56 w-56"/>
         </section>
         <section className="p-2 md:col-span-3 row-span-2 bg-pink-200 flex flex-col items-center gap-6">
             <h2>Visare</h2>
