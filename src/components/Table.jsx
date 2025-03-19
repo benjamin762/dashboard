@@ -23,8 +23,8 @@ export default function Table() {
     return <table className="m-6 border-4 h-80 border-rose-200 text-2xl">
     <thead className="bg-rose-200">
         <tr>
-            <th className="w-40"><button className="p-1 m-1 cursor-pointer hover:border-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("name")}>Namn { sort=="name"? "🔽":""}</button></th>
-            <th className="w-40"><button className="p-1 m-1 cursor-pointer hover:border-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("points")}>Poäng { sort=="points"? "🔽":""}</button></th>
+            <th className="w-40"><button className="p-1 m-1 cursor-pointer rounded-sm hover:outline-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("name")}>Namn { sort=="name"? "🔽":""}</button></th>
+            <th className="w-40"><button className="p-1 m-1 cursor-pointer rounded-sm hover:outline-2 hover:shadow-orange-900 hover:shadow-md" onClick={() => setSort("points")}>Poäng { sort=="points"? "🔽":""}</button></th>
         </tr>
     </thead>
     <tbody className="bg-gray-200">
