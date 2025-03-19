@@ -9,11 +9,11 @@ export default function Dashboard() {
         <section className="p-2 col-start-1 md:col-span-5 bg-blue-100">
             <h2>Stapeldiagram</h2>
             <div className="flex items-end justify-between w-10/12 mx-auto h-60 pb-10">
-                <div className="h-1/4 w-8 bg-black"><div className="relative top-full">Mån 1st</div></div>
-                <div className="h-4/4 w-8 bg-black"><div className="relative top-full">Tis 4st</div></div>
-                <div className="h-2/4 w-8 bg-black"><div className="relative top-full">Ons 2st</div></div>
-                <div className="h-3/4 w-8 bg-black"><div className="relative top-full">Tors 3st</div></div>
-                <div className="h-1/4 w-8 bg-black"><div className="relative top-full">Fre 1st</div></div>
+                <div className="h-1/4 w-8 bg-black"><div className="relative top-full">Mån 1 st.</div></div>
+                <div className="h-4/4 w-8 bg-black"><div className="relative top-full">Tis 4 st.</div></div>
+                <div className="h-2/4 w-8 bg-black"><div className="relative top-full">Ons 2 st.</div></div>
+                <div className="h-3/4 w-8 bg-black"><div className="relative top-full">Tors 3 st.</div></div>
+                <div className="h-1/4 w-8 bg-black"><div className="relative top-full">Fre 1 st.</div></div>
             </div>
         </section>
         <section className="p-2  md:col-span-4 bg-blue-200">
