@@ -18,8 +18,11 @@ export default function Dashboard() {
         </section>
         <section className="p-2  md:col-span-4 bg-blue-200">
             <h2>Tårtdiagram</h2>
-            <div className="bg-yellow-600 rounded-full m-auto h-56 w-56 border-2 border-gray-600"> </div>
-            <div className="text-center"> Brun: 100% </div>
+            <div className="bg-yellow-600 rounded-full m-auto h-56 w-56 border-2 border-gray-600 overflow-clip">
+                 <div className="bg-yellow-200 w-1/2 h-1/2"> </div>
+                 </div>
+            <div className="text-center"> Brun: 75% </div>
+            <div className="text-center"> Gul: 25% </div>
         </section>
         <section className="p-2 md:col-span-3 row-span-2 bg-pink-200 flex flex-col items-center gap-6">
             <h2>Visare</h2>
